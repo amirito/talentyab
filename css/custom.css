@@ -150,3 +150,94 @@ header{
     font-size: 20px;
     color: #2e3192;
 }
+.purple-line{
+    background: url("../images/purple-line.png") repeat-x center;
+    text-align: center;
+}
+.green-line{
+    background: url("../images/green-line.png") repeat-x center;
+    text-align: center;
+}
+.violet-line{
+    background: url("../images/violet-line.png") repeat-x center;
+    text-align: center;
+}
+.title-text{
+    display: inline-block;
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 10px;
+    width: auto;
+}
+.purple{
+    color: #9e005d;
+}
+.purple-border .part-box{
+    border-color: #9e005d;
+}
+.purple-border .part-box span{
+    color: #9e005d;
+}
+.green{
+    color: #00a99d;
+}
+.green-border .part-box{
+    border-color: #00a99d;
+}
+.green-border .part-box span{
+    color: #00a99d;
+}
+.violet{
+    color: #662d91;
+}
+.violet-border .part-box{
+    border-color: #662d91;
+}
+.violet-border .part-box span{
+    color: #662d91;
+}
+.partition{
+    margin-bottom: 50px;
+}
+.part-box{
+    display: inline-block;
+    padding: 0 15px;
+    text-align: center;
+    border: solid 1px;
+    border-radius: 7px;
+    height: 80px;
+    width: 100%;
+    margin-top: 15px;
+}
+.part-box div:first-child{
+    padding-top: 27px;
+    padding-left: 0;
+}
+.part-box div:nth-child(2){
+    padding-top: 25px;
+    padding-right: 0;
+}
+
+.part-box i{
+    color: #999999;
+    border-radius: 50%;
+    padding: 7px 9px 7px 13px;
+    border: solid 1px #999999;
+    font-size: 18px;
+}
+.part-box span{
+    font-size: 20px;
+}
+.pie-chart{
+    margin-bottom: 50px;
+}
+.eva-box{
+    display: inline-block;
+    padding: 0 15px;
+    text-align: center;
+    border: solid 1px #00a99d;
+    border-radius: 7px;
+    height: 80px;
+    width: 100%;
+    margin-top: 15px;
+}
