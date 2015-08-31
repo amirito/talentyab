@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Rayweb</title>
+    <title>talentyab</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/custom.css">
     <link rel="stylesheet" type="text/css" href="css/rayweb.css">
@@ -12,29 +12,44 @@
 <header>
     <img src="images/home-cover.jpg" class="cover img-responsive">
     <div class="header">
-        <img src="images/logo.png" class="logo">
-        <div class="user">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+
+
+        <img src="images/logo.png" class="logo img-responsive col-xs-3 col-sm-2">
+        <div class="user hidden-xs">
             <a href="#">ورود</a>
             <a href="#">درخواست برای کار</a>
         </div>
-        <div class="head-menu">
-            <input type="search" class="col-md-5" placeholder="شغل مورد نظر من">
-            <div class="col-md-5">
-                <ul class="head-nav">
+        <div class="head-menu collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+            <input type="search" class="col-md-5 hidden-xs hidden-sm" placeholder="شغل مورد نظر من">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="col-md-5 col-sm-7">
+                <ul class="nav navbar-nav head-nav">
                     <li><a href="#"><img class="img-responsive" src="images/home.png"></a> </li>
                     <li><a href="#"><img class="img-responsive" src="images/profile.png"></a> </li>
                     <li><a href="#"><img class="img-responsive" src="images/improve.png"></a> </li>
                     <li><a href="#"><img class="img-responsive" src="images/list.png"></a> </li>
                     <li><a href="#"></a> </li>
                 </ul>
-            </div>
-            <div class="col-md-2 organization"><a href="#">سازمان ها</a></div>
+            </div><!-- /.navbar-collapse -->
+            <div class="col-md-2 col-sm-5 organization"><a href="#">سازمان ها</a></div>
         </div>
+        <br>
     </div>
 
 </header>
-<div class="best">
-    <div class="col-md-5">
+<div class="clearfix"></div>
+<div class="best hidden-xs">
+    <div class="col-sm-5">
         <ul class="best-logo">
             <li><a href="#"><img src="images/iran-air.png"></a> <hr class="shadow-row"> </li>
             <li><a href="#"><img src="images/digikala.png"></a> <hr class="shadow-row"> </li>
@@ -42,10 +57,10 @@
             <li><a href="#"><img src="images/zobahan.png"></a> <hr class="shadow-row"> </li>
         </ul>
     </div>
-    <div class="col-md-2 best-text">
+    <div class="col-sm-2 best-text">
         <p class="text-center ">به بهترین ها بپیوندید</p>
     </div>
-    <div class="col-md-5">
+    <div class="col-sm-5">
         <ul class="best-logo">
             <li><a href="#"><img src="images/iran-air.png"></a> <hr class="shadow-row"> </li>
             <li><a href="#"><img src="images/digikala.png"></a> <hr class="shadow-row"> </li>
@@ -60,7 +75,7 @@
         <h2 class="title-text purple">یافتن شغل</h2>
     </div>
     <div class="partition container purple-border">
-        <div class="col-md-2 col-md-offset-1">
+        <div class="col-md-2 col-sm-4 col-xs-6 col-md-offset-1">
             <a href="#" class="part-box">
                 <div class="col-xs-6">
                     <i class="icon-graduation-cap"></i>
@@ -71,7 +86,7 @@
 
             </a>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 col-sm-4 col-xs-6">
             <a href="#" class="part-box">
                 <div class="col-xs-6">
                     <i class="icon-graduation-cap"></i>
@@ -82,7 +97,7 @@
 
             </a>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 col-sm-4 col-xs-6">
             <a href="#" class="part-box">
                 <div class="col-xs-6">
                     <i class="icon-graduation-cap"></i>
@@ -93,7 +108,7 @@
 
             </a>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 col-sm-4 col-xs-6">
             <a href="#" class="part-box">
                 <div class="col-xs-6">
                     <i class="icon-graduation-cap"></i>
@@ -104,7 +119,7 @@
 
             </a>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 col-sm-4 col-xs-6">
             <a href="#" class="part-box">
                 <div class="col-xs-6">
                     <i class="icon-graduation-cap"></i>
@@ -115,7 +130,7 @@
 
             </a>
         </div>
-        <div class="col-md-2 col-md-offset-1">
+        <div class="col-md-2 col-sm-4 col-xs-6 col-md-offset-1">
             <a href="#" class="part-box">
                 <div class="col-xs-6">
                     <i class="icon-graduation-cap"></i>
@@ -126,7 +141,7 @@
 
             </a>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 col-sm-4 col-xs-6">
             <a href="#" class="part-box">
                 <div class="col-xs-6">
                     <i class="icon-graduation-cap"></i>
@@ -137,7 +152,7 @@
 
             </a>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 col-sm-4 col-xs-6">
             <a href="#" class="part-box">
                 <div class="col-xs-6">
                     <i class="icon-graduation-cap"></i>
@@ -148,7 +163,7 @@
 
             </a>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 col-sm-4 col-xs-6">
             <a href="#" class="part-box">
                 <div class="col-xs-6">
                     <i class="icon-graduation-cap"></i>
@@ -159,7 +174,7 @@
 
             </a>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 col-sm-4 col-xs-6">
             <a href="#" class="part-box">
                 <div class="col-xs-6">
                     <i class="icon-graduation-cap"></i>
@@ -175,12 +190,12 @@
 <div class="pie-chart">
     <img src="images/easy-pie-chart.png" class="img-responsive">
 </div>
-<div>
+<div class="text-center">
     <div class="green-line">
         <h2 class="title-text green">ابزارهای ارزیابی</h2>
     </div>
-    <div class="partition container green-border">
-        <div class="col-md-2 col-md-offset-1">
+    <div class="partition container green-border text-center">
+        <div class="col-md-2 col-sm-4 col-xs-6 col-md-offset-1">
             <a href="#" class="part-box">
                 <div class="col-xs-6">
                     <i class="icon-graduation-cap"></i>
@@ -191,7 +206,7 @@
 
             </a>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 col-sm-4 col-xs-6">
             <a href="#" class="part-box">
                 <div class="col-xs-6">
                     <i class="icon-graduation-cap"></i>
@@ -202,7 +217,7 @@
 
             </a>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 col-sm-4 col-xs-6">
             <a href="#" class="part-box">
                 <div class="col-xs-6">
                     <i class="icon-graduation-cap"></i>
@@ -213,7 +228,7 @@
 
             </a>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 col-sm-4 col-xs-6">
             <a href="#" class="part-box">
                 <div class="col-xs-6">
                     <i class="icon-graduation-cap"></i>
@@ -224,7 +239,7 @@
 
             </a>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 col-sm-4 col-xs-6">
             <a href="#" class="part-box">
                 <div class="col-xs-6">
                     <i class="icon-graduation-cap"></i>
@@ -243,7 +258,7 @@
         <h2 class="title-text violet">فرصت های توسعه</h2>
     </div>
     <div class="partition container violet-border">
-        <div class="col-md-2 col-md-offset-1">
+        <div class="col-md-2 col-sm-4 col-xs-6 col-md-offset-1">
             <a href="#" class="part-box">
                 <div class="col-xs-6">
                     <i class="icon-graduation-cap"></i>
@@ -254,7 +269,7 @@
 
             </a>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 col-sm-4 col-xs-6">
             <a href="#" class="part-box">
                 <div class="col-xs-6">
                     <i class="icon-graduation-cap"></i>
@@ -265,7 +280,7 @@
 
             </a>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 col-sm-4 col-xs-6">
             <a href="#" class="part-box">
                 <div class="col-xs-6">
                     <i class="icon-graduation-cap"></i>
@@ -276,7 +291,7 @@
 
             </a>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 col-sm-4 col-xs-6">
             <a href="#" class="part-box">
                 <div class="col-xs-6">
                     <i class="icon-graduation-cap"></i>
@@ -287,7 +302,7 @@
 
             </a>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 col-sm-4 col-xs-6">
             <a href="#" class="part-box">
                 <div class="col-xs-6">
                     <i class="icon-graduation-cap"></i>
@@ -300,7 +315,134 @@
         </div>
     </div>
 </div>
-
+<img src="images/image.png" class="img-responsive">
+<div class="training-content">
+    <h2 class="text-center purple">محتوای آموزش</h2>
+    <a href="#" class="col-sm-1 col-sm-offset-1 tr-box pull-right">
+        <p class="icon icon-graduation-cap text-center"></p>
+        <p class="purple text-center">مهارت های خود مدیریتی</p>
+    </a>
+    <a href="#" class="col-sm-1 tr-box pull-right">
+        <p class="icon icon-graduation-cap text-center"></p>
+        <p class="purple text-center">مهارت های خود مدیریتی</p>
+    </a>
+    <a href="#" class="col-sm-1 tr-box pull-right">
+        <p class="icon icon-graduation-cap text-center"></p>
+        <p class="purple text-center">مهارت های خود مدیریتی</p>
+    </a>
+    <a href="#" class="col-sm-1 tr-box pull-right">
+        <p class="icon icon-graduation-cap text-center"></p>
+        <p class="purple text-center">مهارت های خود مدیریتی</p>
+    </a>
+    <a href="#" class="col-sm-1 tr-box pull-right">
+        <p class="icon icon-graduation-cap text-center"></p>
+        <p class="purple text-center">مهارت های خود مدیریتی</p>
+    </a>
+    <a href="#" class="col-sm-1 tr-box pull-right">
+        <p class="icon icon-graduation-cap text-center"></p>
+        <p class="purple text-center">مهارت های خود مدیریتی</p>
+    </a>
+    <a href="#" class="col-sm-1 tr-box pull-right">
+        <p class="icon icon-graduation-cap text-center"></p>
+        <p class="purple text-center">مهارت های خود مدیریتی</p>
+    </a>
+    <a href="#" class="col-sm-1 tr-box pull-right">
+        <p class="icon icon-graduation-cap text-center"></p>
+        <p class="purple text-center">مهارت های خود مدیریتی</p>
+    </a>
+    <a href="#" class="col-sm-1 tr-box pull-right">
+        <p class="icon icon-graduation-cap text-center"></p>
+        <p class="purple text-center">مهارت های خود مدیریتی</p>
+    </a>
+    <a href="#" class="col-sm-1 tr-box pull-right">
+        <p class="icon icon-graduation-cap text-center"></p>
+        <p class="purple text-center">مهارت های خود مدیریتی</p>
+    </a>
+    <div class="clearfix"></div>
+    <div class="experience text-center">
+        <div class="col-sm-1 col-md-offset-4 col-xs-4">
+            <img src="images/manager.png">
+            <input class="regular-checkbox big-checkbox" id="checkbox-1-1" type="checkbox" name="experience" value="manager"><label for="checkbox-1-1"></label>
+        </div>
+        <div class="col-sm-1 col-xs-4">
+            <img src="images/experienced.png">
+            <input class="regular-checkbox big-checkbox" id="checkbox-1-2" type="checkbox" name="experience" value="experienced"><label for="checkbox-1-2"></label>
+        </div>
+        <div class="col-sm-1 col-xs-4">
+            <img src="images/unskillful.png">
+            <input class="regular-checkbox big-checkbox" id="checkbox-1-3" type="checkbox" name="experience" value="unskillful"><label for="checkbox-1-3"></label>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+<footer>
+    <div class="col-md-9 footer-nav">
+        <div class="col-sm-2 pull-right">
+            <h4>کاریابی</h4>
+            <ul>
+                <li><a href="#"> -...</a></li>
+                <li><a href="#"> -...</a></li>
+                <li><a href="#"> -...</a></li>
+                <li><a href="#"> -...</a></li>
+                <li><a href="#"> -...</a></li>
+                <li><a href="#"> -...</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-2 pull-right">
+            <h4>کارفرمایان</h4>
+            <ul>
+                <li><a href="#"> -...</a></li>
+                <li><a href="#"> -...</a></li>
+                <li><a href="#"> -...</a></li>
+                <li><a href="#"> -...</a></li>
+                <li><a href="#"> -...</a></li>
+                <li><a href="#"> -...</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-2 pull-right">
+            <h4>فرصت های توسعه</h4>
+            <ul>
+                <li><a href="#"> -...</a></li>
+                <li><a href="#"> -...</a></li>
+                <li><a href="#"> -...</a></li>
+                <li><a href="#"> -...</a></li>
+                <li><a href="#"> -...</a></li>
+                <li><a href="#"> -...</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-2 pull-right">
+            <h4>محتوای آموزش</h4>
+            <ul>
+                <li><a href="#"> -...</a></li>
+                <li><a href="#"> -...</a></li>
+                <li><a href="#"> -...</a></li>
+                <li><a href="#"> -...</a></li>
+                <li><a href="#"> -...</a></li>
+                <li><a href="#"> -...</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-2 pull-right"><img src="images/logo-white.png">
+            <ul>
+                <li><a href="#"> -...</a></li>
+                <li><a href="#"> -...</a></li>
+                <li><a href="#"> -...</a></li>
+                <li><a href="#"> -...</a></li>
+                <li><a href="#"> -...</a></li>
+                <li><a href="#"> -...</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-2 pull-right">
+            <h4>همراهی ما</h4>
+            <ul class="social">
+                <li><a href="#"><i class="icon-twitter-squared"></i></a></li>
+                <li><a href="#"><i class="icon-facebook-official"></i></a></li>
+                <li><a href="#"><i class="icon-gplus-squared"></i></a></li>
+                <li><a href="#"><i class="icon-linkedin-squared"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-3"></div>
+</footer>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
