@@ -52,7 +52,7 @@ header{
     bottom: -32.5px;
     width: 100%;
     direction: ltr;
-    padding: 0 10%;
+    padding: 0 5%;
 }
 
 .head-menu input[type=search]{
@@ -112,7 +112,19 @@ header{
 .head-nav li a{
     padding: 0;
 }
-
+.pie-chart{
+    margin-bottom: 50px;
+}
+.blog-content{
+    padding: 15px 20px;
+}
+.blog-content a{
+    display: inline-block;
+    width: 100%;
+    border: solid 1px #999;
+    padding: 5px;
+    min-height: 200px;
+}
 .expert{
     padding: 0;
 }
@@ -380,6 +392,10 @@ footer{
     footer{
         background-image: none;
         height: 600px;
+    }
+    .head-menu{
+        bottom: -18.5px;
+
     }
 }
 @media (max-width: 765px) {
