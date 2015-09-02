@@ -83,7 +83,8 @@ header{
     color:    #cccccc;
 }
 .head-box{
-    background-color: #960064;
+    background: url("../images/blog-head.png");
+    background-size: 100% 100%;
     height: 200px;
     width: 100%;
     position: relative;
@@ -118,7 +119,7 @@ header{
 .blog-content{
     padding: 15px 20px;
 }
-.blog-content a{
+.blog-content > div{
     display: inline-block;
     width: 100%;
     border: solid 1px #999;
@@ -286,11 +287,29 @@ footer{
 }
 
 .mediabox {
-    float: left;
-    width: 33%;
-    padding: 0 25px;
+    float: right;
+    width: 10%;
+    padding: 10px 15px;
+    border-left: solid 1px #9e005d;
+    text-align: center;
+    position: relative;
+    color: #ccc;
 }
-
+.mediabox:hover,.mediabox:focus, .mediabox.active {
+    color: #9e005d;
+}
+.mediabox:last-child{
+    border: none;
+}
+.mediabox:before , .mediabox:after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    right: 0;
+    top: 0;
+    width: 100%;
+    background: #9e005d;
+}
 .mediabox img {
     max-width: 100%;
     display: block;
@@ -319,10 +338,19 @@ footer{
     }
 
     .mediabox {
-        float: none;
-        width: auto;
+        width: 50%;
         padding: 0 0 35px 0;
         font-size: 90%;
+        border: none;
+    }
+    .mediabox:before, .mediabox:after{
+        content: '';
+        position: absolute;
+        height: 0;
+        right: 0;
+        top: 0;
+        width: 100%;
+        background: #9e005d;
     }
 
     .mediabox img {
@@ -388,6 +416,127 @@ footer{
 }
 /* tabs end */
 
+.modal-blog .modal-content{
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 8px;
+}
+.modal-blog .close{
+    font-size: 40px;
+    float: left;
+}
+.modal-blog h4{
+
+    padding-right: 30px;
+}
+.modal-blog .modal-title{
+
+
+    background: url("../images/logo_thumb.png") no-repeat right center;
+    background-size: contain;
+}
+.modal-blog .input{
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.modal-blog .modal-footer{
+    border: none;
+    text-align: center;
+}
+.modal-blog .btn-primary{
+    background-color: #1c39bb;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px #ccc;
+}
+.modal-blog .btn-primary:focus{
+    background-color: #337ab7;
+}
+.btn-secondary{
+    background-color: #fff;
+    color: #ff9900;
+    border-color: #999;
+    border-radius: 4px;
+}
+.btn-secondary:hover{
+    color: #ff9900;
+}
+.article-ver .article-img, .article-ver .article-text{
+    width: 100%;
+    float: right;
+    text-align: justify;
+}
+.article-hor .article-img , .article-hor .article-text{
+    width: 50%;
+    float: right;
+    text-align: justify;
+}
+.article-text{
+    padding: 10px 15px;
+    color: #666;
+}
+.article-hor .article-text h3{
+    margin: 30px 0;
+}
+.article-text h3{
+    color: #9e005d;
+    text-align: center;
+
+}
+.article-ver .add-fav{
+    direction: ltr;
+    padding: 0 10px;
+}
+.article-hor .add-fav a{
+    direction: rtl;
+    padding: 10px 10px;
+}
+.article-info{
+    padding: 5px 10px;
+    color: #666;
+}
+.article-view{
+    float: right;
+}
+.article-time{
+    float: left;
+}
+.article-img{
+    position: relative;
+    overflow-y: hidden;
+}
+.article-img img{
+    width: 100%;
+}
+.article-hover{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(102, 102, 102, .7);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+}
+.article-img:hover .article-hover{
+    visibility: visible;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+}
 @media (max-width: 991px) {
     footer{
         background-image: none;
